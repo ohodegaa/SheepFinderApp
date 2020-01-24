@@ -1,0 +1,49 @@
+//
+//  DJIProductCommunicationManager.swift
+//  SheepFinder
+//
+//  Created by Ole Håkon Ødegaard on 24/01/2020.
+//  Copyright © 2020 Ole Håkon Ødegaard. All rights reserved.
+//
+
+import UIKit
+import DJISDK
+
+
+class DJIProductCommunicationManager: NSObject {
+
+	func registerWithSDK() {
+		let appKey = Bundle.main.object(forInfoDictionaryKey: SDK_APP_KEY_INFO_PLIST_KEY) as? String
+
+		guard appKey != nil && !appKey!.isEmpty else {
+			NSLog("Please enter a valid app key in the info.plist file")
+			return
+		}
+
+		DJISDKManager.registerApp(with: self)
+	}
+}
+
+
+extension DJIProductCommunicationManager: DJISDKManagerDelegate {
+
+	func productConnected(_ product: DJIBaseProduct?) {
+		NSLog("Product Connected")
+	}
+
+	func productDisconnected() {
+		NSLog("Product Disconnected")
+	}
+
+	func appRegisteredWithError(_ error: Error?) {
+		var message = "Register App Successed!"
+		if (error != nil) {
+			message = "Register app failed! Please enter your app key and check the network."
+		}
+		NSLog(message)
+	}
+
+	func didUpdateDatabaseDownloadProgress(_ progress: Progress) {
+		NSLog("Download database : \n%lld/%lld" + String(progress.completedUnitCount), progress.totalUnitCount)
+	}
+}
