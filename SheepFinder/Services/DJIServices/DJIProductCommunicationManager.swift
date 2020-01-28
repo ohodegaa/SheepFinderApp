@@ -6,11 +6,12 @@
 //  Copyright © 2020 Ole Håkon Ødegaard. All rights reserved.
 //
 
-import UIKit
 import DJISDK
 
 
-class DJIProductCommunicationManager: NSObject {
+class DJIProductCommunicationManager: NSObject, DJISDKManagerDelegate {
+
+	let bridgeAppIP: String? = "10.22.33.184"
 
 	func registerWithSDK() {
 		let appKey = Bundle.main.object(forInfoDictionaryKey: SDK_APP_KEY_INFO_PLIST_KEY) as? String
@@ -22,13 +23,10 @@ class DJIProductCommunicationManager: NSObject {
 
 		DJISDKManager.registerApp(with: self)
 	}
-}
-
-
-extension DJIProductCommunicationManager: DJISDKManagerDelegate {
 
 	func productConnected(_ product: DJIBaseProduct?) {
 		NSLog("Product Connected")
+		NSLog(product?.model ?? "No product information")
 	}
 
 	func productDisconnected() {
@@ -39,6 +37,8 @@ extension DJIProductCommunicationManager: DJISDKManagerDelegate {
 		var message = "Register App Successed!"
 		if (error != nil) {
 			message = "Register app failed! Please enter your app key and check the network."
+		} else if bridgeAppIP != nil {
+			DJISDKManager.enableBridgeMode(withBridgeAppIP: bridgeAppIP!)
 		}
 		NSLog(message)
 	}

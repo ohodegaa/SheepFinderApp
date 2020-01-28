@@ -9,10 +9,15 @@
 /* Begin PBXBuildFile section */
 		398F82821B53DA3B47CE02DD /* Pods_SheepFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA1E706A8CA83A6F0D647A4 /* Pods_SheepFinder.framework */; };
 		5E0BBEC223DB1DB5005905C2 /* DJIProductCommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BBEC123DB1DB5005905C2 /* DJIProductCommunicationManager.swift */; };
+		5E3C542623DF134300CD21DA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C542523DF134300CD21DA /* MainViewController.swift */; };
+		5E3C542823DF136500CD21DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3C542723DF136500CD21DA /* Main.storyboard */; };
+		5E3C542A23DF15AA00CD21DA /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C542923DF15AA00CD21DA /* UIButtonExtension.swift */; };
+		5E3C542D23DF298000CD21DA /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C542C23DF298000CD21DA /* AppStoryboard.swift */; };
+		5E3C542F23DF6D7200CD21DA /* App.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3C542E23DF6D7200CD21DA /* App.storyboard */; };
 		5EBFC02F23D9EF3500B47D12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFC02E23D9EF3500B47D12 /* AppDelegate.swift */; };
 		5EBFC03123D9EF3500B47D12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFC03023D9EF3500B47D12 /* SceneDelegate.swift */; };
-		5EBFC03323D9EF3500B47D12 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFC03223D9EF3500B47D12 /* HomeViewController.swift */; };
-		5EBFC03623D9EF3500B47D12 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBFC03423D9EF3500B47D12 /* Home.storyboard */; };
+		5EBFC03323D9EF3500B47D12 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFC03223D9EF3500B47D12 /* LandingViewController.swift */; };
+		5EBFC03623D9EF3500B47D12 /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBFC03423D9EF3500B47D12 /* Landing.storyboard */; };
 		5EBFC03823D9EF3600B47D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EBFC03723D9EF3600B47D12 /* Assets.xcassets */; };
 		5EBFC03B23D9EF3600B47D12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBFC03923D9EF3600B47D12 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -21,11 +26,16 @@
 		0BA1E706A8CA83A6F0D647A4 /* Pods_SheepFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SheepFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11468761E3F05DE7DF273303 /* Pods-SheepFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SheepFinder.release.xcconfig"; path = "Target Support Files/Pods-SheepFinder/Pods-SheepFinder.release.xcconfig"; sourceTree = "<group>"; };
 		5E0BBEC123DB1DB5005905C2 /* DJIProductCommunicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJIProductCommunicationManager.swift; sourceTree = "<group>"; };
+		5E3C542523DF134300CD21DA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5E3C542723DF136500CD21DA /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5E3C542923DF15AA00CD21DA /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		5E3C542C23DF298000CD21DA /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
+		5E3C542E23DF6D7200CD21DA /* App.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = App.storyboard; sourceTree = "<group>"; };
 		5EBFC02B23D9EF3500B47D12 /* SheepFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SheepFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EBFC02E23D9EF3500B47D12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EBFC03023D9EF3500B47D12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5EBFC03223D9EF3500B47D12 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		5EBFC03523D9EF3500B47D12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		5EBFC03223D9EF3500B47D12 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; usesTabs = 1; wrapsLines = 1; };
+		5EBFC03523D9EF3500B47D12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Landing.storyboard; sourceTree = "<group>"; };
 		5EBFC03723D9EF3600B47D12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EBFC03A23D9EF3600B47D12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EBFC03C23D9EF3600B47D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,13 +87,13 @@
 			path = DJIServices;
 			sourceTree = "<group>";
 		};
-		5E0BBEC323DB2197005905C2 /* Home */ = {
+		5E0BBEC323DB2197005905C2 /* Landing */ = {
 			isa = PBXGroup;
 			children = (
-				5EBFC03223D9EF3500B47D12 /* HomeViewController.swift */,
-				5EBFC03423D9EF3500B47D12 /* Home.storyboard */,
+				5EBFC03223D9EF3500B47D12 /* LandingViewController.swift */,
+				5EBFC03423D9EF3500B47D12 /* Landing.storyboard */,
 			);
-			path = Home;
+			path = Landing;
 			sourceTree = "<group>";
 		};
 		5E0BBEC423DB21C6005905C2 /* Startup */ = {
@@ -107,8 +117,26 @@
 			isa = PBXGroup;
 			children = (
 				5EBFC03023D9EF3500B47D12 /* SceneDelegate.swift */,
+				5E3C542C23DF298000CD21DA /* AppStoryboard.swift */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		5E3C542423DF132600CD21DA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5E3C542523DF134300CD21DA /* MainViewController.swift */,
+				5E3C542723DF136500CD21DA /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5E3C542B23DF216F00CD21DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5E3C542923DF15AA00CD21DA /* UIButtonExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5EBFC02223D9EF3500B47D12 = {
@@ -132,12 +160,15 @@
 		5EBFC02D23D9EF3500B47D12 /* SheepFinder */ = {
 			isa = PBXGroup;
 			children = (
+				5E3C542B23DF216F00CD21DA /* Extensions */,
+				5E3C542423DF132600CD21DA /* Main */,
 				5E0BBEC623DB28D8005905C2 /* Supporting files */,
 				5E0BBEC523DB21D8005905C2 /* Resources */,
 				5E0BBEC423DB21C6005905C2 /* Startup */,
-				5E0BBEC323DB2197005905C2 /* Home */,
+				5E0BBEC323DB2197005905C2 /* Landing */,
 				5E0BBEBF23DB1D71005905C2 /* Services */,
 				5EBFC03C23D9EF3600B47D12 /* Info.plist */,
+				5E3C542E23DF6D7200CD21DA /* App.storyboard */,
 			);
 			path = SheepFinder;
 			sourceTree = "<group>";
@@ -205,7 +236,9 @@
 			files = (
 				5EBFC03B23D9EF3600B47D12 /* LaunchScreen.storyboard in Resources */,
 				5EBFC03823D9EF3600B47D12 /* Assets.xcassets in Resources */,
-				5EBFC03623D9EF3500B47D12 /* Home.storyboard in Resources */,
+				5E3C542823DF136500CD21DA /* Main.storyboard in Resources */,
+				5EBFC03623D9EF3500B47D12 /* Landing.storyboard in Resources */,
+				5E3C542F23DF6D7200CD21DA /* App.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,21 +309,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E0BBEC223DB1DB5005905C2 /* DJIProductCommunicationManager.swift in Sources */,
-				5EBFC03323D9EF3500B47D12 /* HomeViewController.swift in Sources */,
+				5E3C542D23DF298000CD21DA /* AppStoryboard.swift in Sources */,
+				5EBFC03323D9EF3500B47D12 /* LandingViewController.swift in Sources */,
+				5E3C542A23DF15AA00CD21DA /* UIButtonExtension.swift in Sources */,
 				5EBFC02F23D9EF3500B47D12 /* AppDelegate.swift in Sources */,
 				5EBFC03123D9EF3500B47D12 /* SceneDelegate.swift in Sources */,
+				5E3C542623DF134300CD21DA /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5EBFC03423D9EF3500B47D12 /* Home.storyboard */ = {
+		5EBFC03423D9EF3500B47D12 /* Landing.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5EBFC03523D9EF3500B47D12 /* Base */,
 			);
-			name = Home.storyboard;
+			name = Landing.storyboard;
 			sourceTree = "<group>";
 		};
 		5EBFC03923D9EF3600B47D12 /* LaunchScreen.storyboard */ = {
