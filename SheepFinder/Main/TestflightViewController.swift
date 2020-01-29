@@ -43,11 +43,14 @@ class TestflightViewController: UIViewController {
 
 	// MARK: Actions
 	@IBAction func addTakeoffAction(_ sender: UIButtonExtension) {
-		let error = DJISDKManager.missionControl()?.scheduleElement(DJIShootPhotoAction())
-
-		if error != nil {
-			NSLog("Error when scheduling takeoff: \(error!)")
-		}
+        let missionControl = DJISDKManager.missionControl()
+		missionControl?.scheduleElement(DJITakeOffAction())
+        missionControl?.scheduleElement(ActionCreator(lat: 63.418337, long: 10.402769))
+        missionControl?.scheduleElement(ActionCreator(lat:63.418447, long: 10.403263	))
+        missionControl?.scheduleElement(ActionCreator(lat: 63.418598, long: 10.403097))
+        missionControl?.scheduleElement(ActionCreator(lat: 63.418531, long: 10.402622    ))
+        missionControl?.scheduleElement(ActionCreator(lat: 63.418337, long: 10.402769))
+        missionControl?.scheduleElement(DJILandAction())
 	}
 
 	@IBAction func addLandAction(_ sender: UIButtonExtension) {
@@ -57,14 +60,8 @@ class TestflightViewController: UIViewController {
 		}
 	}
 	@IBAction func executeMission(_ sender: UIButtonExtension) {
-		DJISDKManager.missionControl()?.addListener("hello-world", toTimelineProgressWith: { (event: DJIMissionControlTimelineEvent, element: DJIMissionControlTimelineElement?, error: Error?, info: Any?) in
-			NSLog("halla balla")
-			NSLog(element?.debugDescription ?? "No element")
-			NSLog("\(event.rawValue)")
-			NSLog(error.debugDescription)
-			NSLog("\(info ?? "No info")")
-		})
-
+        DJISDKManager.missionControl()?.startTimeline()
+        NSLog(CoordinateManager.manager.appLocation.coordinate.longitude.description)
 	}
 
 
