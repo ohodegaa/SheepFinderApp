@@ -1,5 +1,5 @@
 //
-//  DJIProductCommunicationManager.swift
+//  DJI.swift
 //  SheepFinder
 //
 //  Created by Ole Håkon Ødegaard on 24/01/2020.
@@ -9,9 +9,25 @@
 import DJISDK
 
 
-class DJIProductCommunicationManager: NSObject, DJISDKManagerDelegate {
+let dji = DJI()
 
-	let bridgeAppIP: String? = "10.22.33.184"
+class DJI: NSObject, DJISDKManagerDelegate {
+
+
+	// MARK: Properties
+
+	let bridgeAppIP: String? = nil // "10.22.33.47"
+
+	var appRegistered: Bool = false
+	var sdkVersion: String? = nil
+	var product: DJIBaseProduct? = nil
+	var flightController: DJIFlightController? = nil
+
+	override init() {
+		super.init()
+		self.registerWithSDK()
+		self.initFlightController()
+	}
 
 	func registerWithSDK() {
 		let appKey = Bundle.main.object(forInfoDictionaryKey: SDK_APP_KEY_INFO_PLIST_KEY) as? String
@@ -24,9 +40,19 @@ class DJIProductCommunicationManager: NSObject, DJISDKManagerDelegate {
 		DJISDKManager.registerApp(with: self)
 	}
 
+	func initFlightController() {
+		self.flightController = DJIFlightController()
+	}
+
+	// MARK: DJISDKManager Delegates
+
 	func productConnected(_ product: DJIBaseProduct?) {
-		NSLog("Product Connected")
-		NSLog(product?.model ?? "No product information")
+		if product != nil {
+			NSLog("Product connected")
+			self.product = product
+		} else {
+			NSLog("productConnected called, but no product information found")
+		}
 	}
 
 	func productDisconnected() {
@@ -37,8 +63,12 @@ class DJIProductCommunicationManager: NSObject, DJISDKManagerDelegate {
 		var message = "Register App Successed!"
 		if (error != nil) {
 			message = "Register app failed! Please enter your app key and check the network."
-		} else if bridgeAppIP != nil {
-			DJISDKManager.enableBridgeMode(withBridgeAppIP: bridgeAppIP!)
+		} else {
+			self.appRegistered = true
+			self.sdkVersion = DJISDKManager.sdkVersion()
+			if bridgeAppIP != nil {
+				DJISDKManager.enableBridgeMode(withBridgeAppIP: bridgeAppIP!)
+			}
 		}
 		NSLog(message)
 	}

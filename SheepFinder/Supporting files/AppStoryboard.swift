@@ -21,12 +21,6 @@ extension UIViewController {
 
 		return appStoryboard.viewController(viewControllerClass: self)
 	}
-
-	static func go(fromAppStoryboard appStoryboard: AppStoryboard) -> Void {
-		let viewController = appStoryboard.viewController(viewControllerClass: self)
-		UIApplication.shared.windows.first?.rootViewController = viewController
-		UIApplication.shared.windows.first?.makeKeyAndVisible()
-	}
 }
 
 

@@ -10,7 +10,7 @@
         <!--Item 2-->
         <scene sceneID="wUR-N7-Lbh">
             <objects>
-                <viewController id="Ttf-Pw-hhz" sceneMemberID="viewController">
+                <viewController id="Ttf-Pw-hhz" customClass="FlightControlLayoutViewController" customModule="SheepFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jef-h3-d6c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,17 +23,95 @@
             </objects>
             <point key="canvasLocation" x="-107" y="217"/>
         </scene>
-        <!--Item 1-->
+        <!--Test Flight-->
         <scene sceneID="YLe-xH-LHs">
             <objects>
-                <viewController id="81i-aT-Ouw" sceneMemberID="viewController">
+                <viewController id="81i-aT-Ouw" customClass="TestflightViewController" customModule="SheepFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="egg-jv-pMn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testflight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFQ-Il-j8F">
+                                <rect key="frame" x="20" y="44" width="374" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="RHa-S3-aUc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take-off or land:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WL6-au-LkV">
+                                <rect key="frame" x="20" y="128" width="374" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="457-BB-8sv" customClass="UIButtonExtension" customModule="SheepFinder" customModuleProvider="target">
+                                <rect key="frame" x="20" y="212" width="100" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ssx-4z-Qx5"/>
+                                </constraints>
+                                <state key="normal" title="Add Takeoff">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addTakeoffAction:" destination="81i-aT-Ouw" eventType="touchUpInside" id="CQ4-yl-p5K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rb7-9m-haC" customClass="UIButtonExtension" customModule="SheepFinder" customModuleProvider="target">
+                                <rect key="frame" x="20" y="287" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Execute">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="executeMission:" destination="81i-aT-Ouw" eventType="touchUpInside" id="uQR-hf-woU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kun-yb-rj1" customClass="UIButtonExtension" customModule="SheepFinder" customModuleProvider="target">
+                                <rect key="frame" x="189" y="212" width="100" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="yhT-XN-mbD"/>
+                                </constraints>
+                                <state key="normal" title="Add land">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addLandAction:" destination="81i-aT-Ouw" eventType="touchUpInside" id="AC5-ZQ-F7r"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oFQ-Il-j8F" firstAttribute="leading" secondItem="4Az-YM-a8d" secondAttribute="leading" constant="20" id="QZS-JQ-RpY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WL6-au-LkV" secondAttribute="trailing" id="cJj-4b-QxO"/>
+                            <constraint firstItem="4Az-YM-a8d" firstAttribute="trailing" secondItem="oFQ-Il-j8F" secondAttribute="trailing" constant="20" id="gOx-sf-69H"/>
+                            <constraint firstItem="457-BB-8sv" firstAttribute="top" secondItem="WL6-au-LkV" secondAttribute="bottom" constant="50" id="ggD-tB-xiy"/>
+                            <constraint firstItem="oFQ-Il-j8F" firstAttribute="top" secondItem="4Az-YM-a8d" secondAttribute="top" id="ikc-EY-HF3"/>
+                            <constraint firstItem="457-BB-8sv" firstAttribute="leading" secondItem="4Az-YM-a8d" secondAttribute="leading" constant="20" id="tMc-Bv-ejM"/>
+                            <constraint firstItem="WL6-au-LkV" firstAttribute="top" secondItem="oFQ-Il-j8F" secondAttribute="bottom" constant="42" id="w9e-Mf-evF"/>
+                            <constraint firstItem="WL6-au-LkV" firstAttribute="leading" secondItem="egg-jv-pMn" secondAttribute="leadingMargin" id="wsg-mD-7j7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4Az-YM-a8d"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="9iA-BW-Rvg"/>
+                    <tabBarItem key="tabBarItem" title="Test Flight" image="paperplane.fill" catalog="system" id="9iA-BW-Rvg"/>
+                    <connections>
+                        <outlet property="addLandButton" destination="kun-yb-rj1" id="rUB-6I-j5J"/>
+                        <outlet property="addTakeoffButton" destination="457-BB-8sv" id="hIS-dY-fky"/>
+                        <outlet property="executeButton" destination="Rb7-9m-haC" id="Kcw-6X-Npe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFv-aq-OXr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,4 +136,7 @@
             <point key="canvasLocation" x="-1026" y="-107"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="paperplane.fill" catalog="system" width="64" height="60"/>
+    </resources>
 </document>

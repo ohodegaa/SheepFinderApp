@@ -11,15 +11,8 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-	var DJIProductComunicationManager = DJIProductCommunicationManager()
-
-
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
-
-		self.DJIProductComunicationManager.registerWithSDK()
-
 		return true
 	}
 
