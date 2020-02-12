@@ -8,25 +8,22 @@
 
 import DJISDK
 
-
-let dji = DJI()
-
 class DJI: NSObject, DJISDKManagerDelegate {
 
 
 	// MARK: Properties
 
-	let bridgeAppIP: String? = nil // "10.22.33.47"
+	static let bridgeAppIP: String? = nil // "10.22.33.47"
 
-	var appRegistered: Bool = false
-	var sdkVersion: String? = nil
-	var product: DJIBaseProduct? = nil
-	var flightController: DJIFlightController? = nil
+	static let main = DJI()
 
 	override init() {
 		super.init()
 		self.registerWithSDK()
-		self.initFlightController()
+	}
+
+	func getConnectedProduct() -> DJIBaseProduct? {
+		return DJISDKManager.product()
 	}
 
 	func registerWithSDK() {
@@ -40,8 +37,16 @@ class DJI: NSObject, DJISDKManagerDelegate {
 		DJISDKManager.registerApp(with: self)
 	}
 
-	func initFlightController() {
-		self.flightController = DJIFlightController()
+	func isRegisteredWithSDK() -> Bool {
+		return DJISDKManager.hasSDKRegistered()
+	}
+
+	func getSDKVersion() -> String {
+		return DJISDKManager.sdkVersion()
+	}
+
+	func getFlightController() -> DJIFlightController {
+		return DJIFlightController()
 	}
 
 	// MARK: DJISDKManager Delegates
@@ -49,7 +54,6 @@ class DJI: NSObject, DJISDKManagerDelegate {
 	func productConnected(_ product: DJIBaseProduct?) {
 		if product != nil {
 			NSLog("Product connected")
-			self.product = product
 		} else {
 			NSLog("productConnected called, but no product information found")
 		}
@@ -64,10 +68,8 @@ class DJI: NSObject, DJISDKManagerDelegate {
 		if (error != nil) {
 			message = "Register app failed! Please enter your app key and check the network."
 		} else {
-			self.appRegistered = true
-			self.sdkVersion = DJISDKManager.sdkVersion()
-			if bridgeAppIP != nil {
-				DJISDKManager.enableBridgeMode(withBridgeAppIP: bridgeAppIP!)
+			if DJI.bridgeAppIP != nil {
+				DJISDKManager.enableBridgeMode(withBridgeAppIP: DJI.bridgeAppIP!)
 			}
 		}
 		NSLog(message)

@@ -11,11 +11,11 @@
 		5E0BBEC223DB1DB5005905C2 /* DJI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BBEC123DB1DB5005905C2 /* DJI.swift */; };
 		5E0FC33723E04C65000F753C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0FC33623E04C65000F753C /* MainViewController.swift */; };
 		5E0FC33923E05196000F753C /* TestflightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0FC33823E05196000F753C /* TestflightViewController.swift */; };
-		5E0FC33B23E05ADF000F753C /* DJIFlightControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0FC33A23E05ADF000F753C /* DJIFlightControllerExtension.swift */; };
 		5E3C542823DF136500CD21DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3C542723DF136500CD21DA /* Main.storyboard */; };
 		5E3C542A23DF15AA00CD21DA /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C542923DF15AA00CD21DA /* UIButtonExtension.swift */; };
 		5E3C542D23DF298000CD21DA /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C542C23DF298000CD21DA /* AppStoryboard.swift */; };
 		5E3C542F23DF6D7200CD21DA /* App.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3C542E23DF6D7200CD21DA /* App.storyboard */; };
+		5E5F9EE823E2DD2700D1091F /* CoordinateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F9EE623E2DD2700D1091F /* CoordinateManager.swift */; };
 		5EBFC02F23D9EF3500B47D12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFC02E23D9EF3500B47D12 /* AppDelegate.swift */; };
 		5EBFC03123D9EF3500B47D12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFC03023D9EF3500B47D12 /* SceneDelegate.swift */; };
 		5EBFC03323D9EF3500B47D12 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFC03223D9EF3500B47D12 /* LandingViewController.swift */; };
@@ -31,11 +31,11 @@
 		5E0BBEC123DB1DB5005905C2 /* DJI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJI.swift; sourceTree = "<group>"; };
 		5E0FC33623E04C65000F753C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5E0FC33823E05196000F753C /* TestflightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestflightViewController.swift; sourceTree = "<group>"; };
-		5E0FC33A23E05ADF000F753C /* DJIFlightControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJIFlightControllerExtension.swift; sourceTree = "<group>"; };
 		5E3C542723DF136500CD21DA /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5E3C542923DF15AA00CD21DA /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		5E3C542C23DF298000CD21DA /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 		5E3C542E23DF6D7200CD21DA /* App.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = App.storyboard; sourceTree = "<group>"; };
+		5E5F9EE623E2DD2700D1091F /* CoordinateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateManager.swift; sourceTree = "<group>"; };
 		5EBFC02B23D9EF3500B47D12 /* SheepFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SheepFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EBFC02E23D9EF3500B47D12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EBFC03023D9EF3500B47D12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				5E0BBEC123DB1DB5005905C2 /* DJI.swift */,
-				5E0FC33A23E05ADF000F753C /* DJIFlightControllerExtension.swift */,
+				5E5F9EE623E2DD2700D1091F /* CoordinateManager.swift */,
 			);
 			path = DJIServices;
 			sourceTree = "<group>";
@@ -321,10 +321,10 @@
 				5E0FC33923E05196000F753C /* TestflightViewController.swift in Sources */,
 				5EEF25A723E0A29800949B8F /* FlightControlLayoutViewController.swift in Sources */,
 				5E0BBEC223DB1DB5005905C2 /* DJI.swift in Sources */,
-				5E0FC33B23E05ADF000F753C /* DJIFlightControllerExtension.swift in Sources */,
 				5E3C542D23DF298000CD21DA /* AppStoryboard.swift in Sources */,
 				5EBFC03323D9EF3500B47D12 /* LandingViewController.swift in Sources */,
 				5E3C542A23DF15AA00CD21DA /* UIButtonExtension.swift in Sources */,
+				5E5F9EE823E2DD2700D1091F /* CoordinateManager.swift in Sources */,
 				5EBFC02F23D9EF3500B47D12 /* AppDelegate.swift in Sources */,
 				5EBFC03123D9EF3500B47D12 /* SceneDelegate.swift in Sources */,
 			);
