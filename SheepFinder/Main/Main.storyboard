@@ -7,21 +7,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Map-->
         <scene sceneID="wUR-N7-Lbh">
             <objects>
-                <viewController id="Ttf-Pw-hhz" customClass="FlightControlLayoutViewController" customModule="SheepFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ttf-Pw-hhz" customClass="MissionPlannerViewController" customModule="SheepFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jef-h3-d6c">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djb-ff-oJ2">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="344"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="djb-ff-oJ2" firstAttribute="bottom" secondItem="VDv-zY-uEO" secondAttribute="bottom" id="18G-Xh-GbA"/>
+                            <constraint firstItem="djb-ff-oJ2" firstAttribute="leading" secondItem="jef-h3-d6c" secondAttribute="leading" id="6Nv-b2-xea"/>
+                            <constraint firstItem="djb-ff-oJ2" firstAttribute="top" secondItem="jef-h3-d6c" secondAttribute="top" id="P9l-YW-ZxQ"/>
+                            <constraint firstAttribute="trailing" secondItem="djb-ff-oJ2" secondAttribute="trailing" id="eXB-vr-Kcr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VDv-zY-uEO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="LMj-CD-JZL"/>
+                    <tabBarItem key="tabBarItem" title="Map" selectedImage="map" catalog="system" id="LMj-CD-JZL"/>
+                    <connections>
+                        <outlet property="mapView" destination="djb-ff-oJ2" id="t4y-Fe-NHh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mex-4w-Zoi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-107" y="217"/>
+            <point key="canvasLocation" x="-107.14285714285714" y="408.69565217391306"/>
         </scene>
         <!--Test Flight-->
         <scene sceneID="YLe-xH-LHs">
@@ -146,6 +160,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="map" catalog="system" width="64" height="56"/>
         <image name="paperplane.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>
