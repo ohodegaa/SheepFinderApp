@@ -32,22 +32,26 @@ class LandingViewController: UIViewController {
 	// MARK: Private Methods
 
 	private func showSDKRegisteredStatus() {
-		if dji.appRegistered, let version = dji.sdkVersion {
-			SDKRegisteredStatusLabel.text = "SDK (v\(version)) registered successfully"
+		if DJI.main.isRegisteredWithSDK() {
+			SDKRegisteredStatusLabel.text = "SDK (v\(DJI.main.getSDKVersion())) registered successfully"
 		} else {
 			SDKRegisteredStatusLabel.text = "SDK is not registered"
 		}
 	}
 
 	private func showConnectedProductStatus() {
-		connectedProductLabel.text = dji.product?.model ?? "No connected product found"
+		var message: String = "No connected product"
+		NSLog(DJI.main.getConnectedProduct()?.model ?? "No product")
+		if let product = DJI.main.getConnectedProduct() {
+			message = product.model ?? "Product found, but no model"
+		}
+		connectedProductLabel.text = message
 	}
 
 
 	// MARK: Actions
 
 	@IBAction func refreshStateButton(_ sender: UIButton) {
-		dji.registerWithSDK()
 		self.showConnectedProductStatus()
 		self.showSDKRegisteredStatus()
 	}

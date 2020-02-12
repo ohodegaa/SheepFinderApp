@@ -16,7 +16,6 @@ class TestflightViewController: UIViewController {
 
 	var started: Bool = false
 
-
 	@IBOutlet weak var addTakeoffButton: UIButtonExtension!
 	@IBOutlet weak var addLandButton: UIButtonExtension!
 	@IBOutlet weak var executeButton: UIButtonExtension!
@@ -43,14 +42,15 @@ class TestflightViewController: UIViewController {
 
 	// MARK: Actions
 	@IBAction func addTakeoffAction(_ sender: UIButtonExtension) {
-        let missionControl = DJISDKManager.missionControl()
+		NSLog("TakeOff")
+		let missionControl = DJISDKManager.missionControl()
 		missionControl?.scheduleElement(DJITakeOffAction())
-        missionControl?.scheduleElement(ActionCreator(lat: 63.418337, long: 10.402769))
-        missionControl?.scheduleElement(ActionCreator(lat:63.418447, long: 10.403263	))
-        missionControl?.scheduleElement(ActionCreator(lat: 63.418598, long: 10.403097))
-        missionControl?.scheduleElement(ActionCreator(lat: 63.418531, long: 10.402622    ))
-        missionControl?.scheduleElement(ActionCreator(lat: 63.418337, long: 10.402769))
-        missionControl?.scheduleElement(DJILandAction())
+		missionControl?.scheduleElement(DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 63.418337, longitude: 10.402769), altitude: 5)!)
+		missionControl?.scheduleElement(DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 63.418447, longitude: 10.403263), altitude: 5)!)
+		missionControl?.scheduleElement(DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 63.418598, longitude: 10.403097), altitude: 5)!)
+		missionControl?.scheduleElement(DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 63.418531, longitude: 10.402622), altitude: 5)!)
+		missionControl?.scheduleElement(DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 63.418337, longitude: 10.402769), altitude: 5)!)
+		missionControl?.scheduleElement(DJILandAction())
 	}
 
 	@IBAction func addLandAction(_ sender: UIButtonExtension) {
@@ -60,8 +60,8 @@ class TestflightViewController: UIViewController {
 		}
 	}
 	@IBAction func executeMission(_ sender: UIButtonExtension) {
-        DJISDKManager.missionControl()?.startTimeline()
-        NSLog(CoordinateManager.manager.appLocation.coordinate.longitude.description)
+		DJISDKManager.missionControl()?.startTimeline()
+		NSLog(CoordinateManager.manager.appLocation.coordinate.longitude.description)
 	}
 
 
