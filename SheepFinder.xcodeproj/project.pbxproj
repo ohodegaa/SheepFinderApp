@@ -22,7 +22,7 @@
 		5EBFC03623D9EF3500B47D12 /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBFC03423D9EF3500B47D12 /* Landing.storyboard */; };
 		5EBFC03823D9EF3600B47D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EBFC03723D9EF3600B47D12 /* Assets.xcassets */; };
 		5EBFC03B23D9EF3600B47D12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBFC03923D9EF3600B47D12 /* LaunchScreen.storyboard */; };
-		5EEF25A723E0A29800949B8F /* FlightControlLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF25A623E0A29800949B8F /* FlightControlLayoutViewController.swift */; };
+		5EEF25A723E0A29800949B8F /* MissionPlannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF25A623E0A29800949B8F /* MissionPlannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +44,7 @@
 		5EBFC03723D9EF3600B47D12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EBFC03A23D9EF3600B47D12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EBFC03C23D9EF3600B47D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5EEF25A623E0A29800949B8F /* FlightControlLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightControlLayoutViewController.swift; sourceTree = "<group>"; };
+		5EEF25A623E0A29800949B8F /* MissionPlannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionPlannerViewController.swift; sourceTree = "<group>"; };
 		65FF8B7092FA0C9AA15000E2 /* Pods-SheepFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SheepFinder.debug.xcconfig"; path = "Target Support Files/Pods-SheepFinder/Pods-SheepFinder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,7 +135,7 @@
 				5E3C542723DF136500CD21DA /* Main.storyboard */,
 				5E0FC33623E04C65000F753C /* MainViewController.swift */,
 				5E0FC33823E05196000F753C /* TestflightViewController.swift */,
-				5EEF25A623E0A29800949B8F /* FlightControlLayoutViewController.swift */,
+				5EEF25A623E0A29800949B8F /* MissionPlannerViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -319,7 +319,7 @@
 			files = (
 				5E0FC33723E04C65000F753C /* MainViewController.swift in Sources */,
 				5E0FC33923E05196000F753C /* TestflightViewController.swift in Sources */,
-				5EEF25A723E0A29800949B8F /* FlightControlLayoutViewController.swift in Sources */,
+				5EEF25A723E0A29800949B8F /* MissionPlannerViewController.swift in Sources */,
 				5E0BBEC223DB1DB5005905C2 /* DJI.swift in Sources */,
 				5E3C542D23DF298000CD21DA /* AppStoryboard.swift in Sources */,
 				5EBFC03323D9EF3500B47D12 /* LandingViewController.swift in Sources */,
