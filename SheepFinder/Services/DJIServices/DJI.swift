@@ -17,8 +17,9 @@ class DJI: NSObject, DJISDKManagerDelegate {
 
 	static let main = DJI()
 
-	override init() {
+	override private init() {
 		super.init()
+		print("halla balla")
 		self.registerWithSDK()
 	}
 

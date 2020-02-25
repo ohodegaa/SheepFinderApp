@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import GoogleMaps
+
+let GMSDKAppKey = Bundle.main.object(forInfoDictionaryKey: "GMSDKAppKey") as? String
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
 		DJI.main
+		if let key = GMSDKAppKey {
+			GMSServices.provideAPIKey(key)
+		}
 		return true
 	}
 
