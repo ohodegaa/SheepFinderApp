@@ -34,7 +34,6 @@ class CoordinateManager: NSObject, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         self.appLocation = locations.last! as CLLocation
-        NSLog(self.appLocation.description)
     }
     
     func getAppLocationAs2D() -> CLLocationCoordinate2D {

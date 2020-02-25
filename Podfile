@@ -1,5 +1,5 @@
 platform :ios, '13.2'
-use_frameworks!
+workspace 'SheepFinder'
 
 post_install do |installer|
     installer.pods_project.targets.each do |target|
@@ -14,8 +14,11 @@ end
 
 
 target 'SheepFinder' do
+	 use_frameworks!
    pod 'DJI-SDK-iOS', '~> 4.11.1'
    pod 'DJIWidget', '~> 1.6.2'
    pod 'DJI-UXSDK-iOS', '~> 4.11'
    pod 'DJIFlySafeDatabaseResource', '~> 01.00.01.17'
+   pod 'GoogleMaps'
+   pod 'GooglePlaces'
 end

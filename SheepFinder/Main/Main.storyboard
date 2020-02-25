@@ -10,7 +10,7 @@
         <!--Map-->
         <scene sceneID="wUR-N7-Lbh">
             <objects>
-                <viewController id="Ttf-Pw-hhz" customClass="MissionPlannerViewController" customModule="SheepFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ttf-Pw-hhz" customClass="AppleMapsViewController" customModule="SheepFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jef-h3-d6c">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,14 +28,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VDv-zY-uEO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" selectedImage="map" catalog="system" id="LMj-CD-JZL"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" selectedImage="map" id="LMj-CD-JZL"/>
                     <connections>
                         <outlet property="mapView" destination="djb-ff-oJ2" id="t4y-Fe-NHh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mex-4w-Zoi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-107.14285714285714" y="408.69565217391306"/>
+            <point key="canvasLocation" x="-107" y="416"/>
         </scene>
         <!--Test Flight-->
         <scene sceneID="YLe-xH-LHs">
@@ -152,15 +152,33 @@
                     <connections>
                         <segue destination="81i-aT-Ouw" kind="relationship" relationship="viewControllers" id="LKQ-Zn-3wp"/>
                         <segue destination="Ttf-Pw-hhz" kind="relationship" relationship="viewControllers" id="iHW-o8-W4j"/>
+                        <segue destination="Ge6-eP-SCv" kind="relationship" relationship="viewControllers" id="iii-Hg-fur"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGq-Mk-j62" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1026" y="-107"/>
+            <point key="canvasLocation" x="-960" y="-116"/>
+        </scene>
+        <!--Google Maps-->
+        <scene sceneID="da2-8P-6k5">
+            <objects>
+                <viewController title="Google Maps" id="Ge6-eP-SCv" customClass="GoogleMapsViewController" customModule="SheepFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KIi-1Q-8a2">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YSq-38-17d"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Google Maps" image="map.fill" catalog="system" id="TAe-mt-gFb" userLabel="Google Maps"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dEi-sd-PS0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-107" y="1358"/>
         </scene>
     </scenes>
     <resources>
         <image name="map" catalog="system" width="64" height="56"/>
+        <image name="map.fill" catalog="system" width="64" height="56"/>
         <image name="paperplane.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>

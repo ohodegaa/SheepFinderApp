@@ -7,22 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		398F82821B53DA3B47CE02DD /* Pods_SheepFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA1E706A8CA83A6F0D647A4 /* Pods_SheepFinder.framework */; };
+		593F527CB53DB80E92BA953D /* Pods_SheepFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA1E706A8CA83A6F0D647A4 /* Pods_SheepFinder.framework */; };
 		5E0BBEC223DB1DB5005905C2 /* DJI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BBEC123DB1DB5005905C2 /* DJI.swift */; };
 		5E0FC33723E04C65000F753C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0FC33623E04C65000F753C /* MainViewController.swift */; };
 		5E0FC33923E05196000F753C /* TestflightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0FC33823E05196000F753C /* TestflightViewController.swift */; };
+		5E369A5F2405425B008C0B5F /* GoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E369A5E2405425B008C0B5F /* GoogleMapsViewController.swift */; };
 		5E3C542823DF136500CD21DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3C542723DF136500CD21DA /* Main.storyboard */; };
 		5E3C542A23DF15AA00CD21DA /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C542923DF15AA00CD21DA /* UIButtonExtension.swift */; };
 		5E3C542D23DF298000CD21DA /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C542C23DF298000CD21DA /* AppStoryboard.swift */; };
 		5E3C542F23DF6D7200CD21DA /* App.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3C542E23DF6D7200CD21DA /* App.storyboard */; };
 		5E5F9EE823E2DD2700D1091F /* CoordinateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F9EE623E2DD2700D1091F /* CoordinateManager.swift */; };
+		5E65654723F58B06001511E4 /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65654623F58B06001511E4 /* CustomPointAnnotation.swift */; };
+		5E65654923F59320001511E4 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65654823F59320001511E4 /* utils.swift */; };
 		5EBFC02F23D9EF3500B47D12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFC02E23D9EF3500B47D12 /* AppDelegate.swift */; };
 		5EBFC03123D9EF3500B47D12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFC03023D9EF3500B47D12 /* SceneDelegate.swift */; };
 		5EBFC03323D9EF3500B47D12 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFC03223D9EF3500B47D12 /* LandingViewController.swift */; };
 		5EBFC03623D9EF3500B47D12 /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBFC03423D9EF3500B47D12 /* Landing.storyboard */; };
 		5EBFC03823D9EF3600B47D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EBFC03723D9EF3600B47D12 /* Assets.xcassets */; };
 		5EBFC03B23D9EF3600B47D12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBFC03923D9EF3600B47D12 /* LaunchScreen.storyboard */; };
-		5EEF25A723E0A29800949B8F /* MissionPlannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF25A623E0A29800949B8F /* MissionPlannerViewController.swift */; };
+		5ED5C4C723F6CB6700CC3476 /* SheepFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5C4C523F6CB6700CC3476 /* SheepFinder.xcdatamodeld */; };
+		5EEF25A723E0A29800949B8F /* AppleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF25A623E0A29800949B8F /* AppleMapsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +35,17 @@
 		5E0BBEC123DB1DB5005905C2 /* DJI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJI.swift; sourceTree = "<group>"; };
 		5E0FC33623E04C65000F753C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5E0FC33823E05196000F753C /* TestflightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestflightViewController.swift; sourceTree = "<group>"; };
+		5E369A5E2405425B008C0B5F /* GoogleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsViewController.swift; sourceTree = "<group>"; };
 		5E3C542723DF136500CD21DA /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5E3C542923DF15AA00CD21DA /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		5E3C542C23DF298000CD21DA /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 		5E3C542E23DF6D7200CD21DA /* App.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = App.storyboard; sourceTree = "<group>"; };
+		5E5D3FEA23FBDD0600EB5155 /* DJIWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DJIWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E5D3FED23FBDD2E00EB5155 /* DJISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DJISDK.framework; path = "Pods/DJI-SDK-iOS/iOS_Mobile_SDK/DJISDK.framework"; sourceTree = "<group>"; };
+		5E5D3FF023FBDD9E00EB5155 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
 		5E5F9EE623E2DD2700D1091F /* CoordinateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateManager.swift; sourceTree = "<group>"; };
+		5E65654623F58B06001511E4 /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
+		5E65654823F59320001511E4 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
 		5EBFC02B23D9EF3500B47D12 /* SheepFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SheepFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EBFC02E23D9EF3500B47D12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EBFC03023D9EF3500B47D12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +54,8 @@
 		5EBFC03723D9EF3600B47D12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EBFC03A23D9EF3600B47D12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EBFC03C23D9EF3600B47D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5EEF25A623E0A29800949B8F /* MissionPlannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionPlannerViewController.swift; sourceTree = "<group>"; };
+		5ED5C4C623F6CB6700CC3476 /* Polygon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Polygon.xcdatamodel; sourceTree = "<group>"; };
+		5EEF25A623E0A29800949B8F /* AppleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMapsViewController.swift; sourceTree = "<group>"; };
 		65FF8B7092FA0C9AA15000E2 /* Pods-SheepFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SheepFinder.debug.xcconfig"; path = "Target Support Files/Pods-SheepFinder/Pods-SheepFinder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				398F82821B53DA3B47CE02DD /* Pods_SheepFinder.framework in Frameworks */,
+				593F527CB53DB80E92BA953D /* Pods_SheepFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +83,9 @@
 		4998D8623B5D25D0A56C7550 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E5D3FF023FBDD9E00EB5155 /* Pods */,
+				5E5D3FED23FBDD2E00EB5155 /* DJISDK.framework */,
+				5E5D3FEA23FBDD0600EB5155 /* DJIWidget.framework */,
 				0BA1E706A8CA83A6F0D647A4 /* Pods_SheepFinder.framework */,
 			);
 			name = Frameworks;
@@ -80,6 +94,7 @@
 		5E0BBEBF23DB1D71005905C2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5E65654523F58AE9001511E4 /* Map */,
 				5E0BBEC023DB1D88005905C2 /* DJIServices */,
 			);
 			path = Services;
@@ -135,7 +150,8 @@
 				5E3C542723DF136500CD21DA /* Main.storyboard */,
 				5E0FC33623E04C65000F753C /* MainViewController.swift */,
 				5E0FC33823E05196000F753C /* TestflightViewController.swift */,
-				5EEF25A623E0A29800949B8F /* MissionPlannerViewController.swift */,
+				5EEF25A623E0A29800949B8F /* AppleMapsViewController.swift */,
+				5E369A5E2405425B008C0B5F /* GoogleMapsViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -146,6 +162,15 @@
 				5E3C542923DF15AA00CD21DA /* UIButtonExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5E65654523F58AE9001511E4 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				5E65654623F58B06001511E4 /* CustomPointAnnotation.swift */,
+				5E65654823F59320001511E4 /* utils.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		5EBFC02223D9EF3500B47D12 = {
@@ -178,6 +203,7 @@
 				5E0BBEBF23DB1D71005905C2 /* Services */,
 				5EBFC03C23D9EF3600B47D12 /* Info.plist */,
 				5E3C542E23DF6D7200CD21DA /* App.storyboard */,
+				5ED5C4C523F6CB6700CC3476 /* SheepFinder.xcdatamodeld */,
 			);
 			path = SheepFinder;
 			sourceTree = "<group>";
@@ -319,8 +345,12 @@
 			files = (
 				5E0FC33723E04C65000F753C /* MainViewController.swift in Sources */,
 				5E0FC33923E05196000F753C /* TestflightViewController.swift in Sources */,
-				5EEF25A723E0A29800949B8F /* MissionPlannerViewController.swift in Sources */,
+				5EEF25A723E0A29800949B8F /* AppleMapsViewController.swift in Sources */,
+				5E65654923F59320001511E4 /* utils.swift in Sources */,
+				5E369A5F2405425B008C0B5F /* GoogleMapsViewController.swift in Sources */,
 				5E0BBEC223DB1DB5005905C2 /* DJI.swift in Sources */,
+				5E65654723F58B06001511E4 /* CustomPointAnnotation.swift in Sources */,
+				5ED5C4C723F6CB6700CC3476 /* SheepFinder.xcdatamodeld in Sources */,
 				5E3C542D23DF298000CD21DA /* AppStoryboard.swift in Sources */,
 				5EBFC03323D9EF3500B47D12 /* LandingViewController.swift in Sources */,
 				5E3C542A23DF15AA00CD21DA /* UIButtonExtension.swift in Sources */,
@@ -476,8 +506,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J6URDK4YM;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/DJI-SDK-iOS/iOS_Mobile_SDK",
+				);
 				HEADER_SEARCH_PATHS = "\"$(PODS_ROOT)/Headers/Public\"";
 				INFOPLIST_FILE = SheepFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,8 +534,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J6URDK4YM;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/DJI-SDK-iOS/iOS_Mobile_SDK",
+				);
 				HEADER_SEARCH_PATHS = "\"$(PODS_ROOT)/Headers/Public\"";
 				INFOPLIST_FILE = SheepFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -536,6 +576,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5ED5C4C523F6CB6700CC3476 /* SheepFinder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5ED5C4C623F6CB6700CC3476 /* Polygon.xcdatamodel */,
+			);
+			currentVersion = 5ED5C4C623F6CB6700CC3476 /* Polygon.xcdatamodel */;
+			path = SheepFinder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5EBFC02323D9EF3500B47D12 /* Project object */;
 }

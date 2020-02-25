@@ -20,6 +20,8 @@
 	<string>1</string>
 	<key>DJISDKAppKey</key>
 	<string>d006c51d17f369f3955110de</string>
+	<key>GMSDKAppKey</key>
+	<string>AIzaSyBGUV02Rl7ZTkqXsNc1n0xZn40jtHQpWxY</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
