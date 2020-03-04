@@ -44,26 +44,47 @@ class TestflightViewController: UIViewController {
 	@IBAction func addTakeoffAction(_ sender: UIButtonExtension) {
 		NSLog("TakeOff")
 		let missionControl = DJISDKManager.missionControl()
-		missionControl?.scheduleElement(DJITakeOffAction())
-		missionControl?.scheduleElement(DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 63.418337, longitude: 10.402769), altitude: 5)!)
-		missionControl?.scheduleElement(DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 63.418447, longitude: 10.403263), altitude: 5)!)
-		missionControl?.scheduleElement(DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 63.418598, longitude: 10.403097), altitude: 5)!)
-		missionControl?.scheduleElement(DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 63.418531, longitude: 10.402622), altitude: 5)!)
-		missionControl?.scheduleElement(DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 63.418337, longitude: 10.402769), altitude: 5)!)
-		missionControl?.scheduleElement(DJILandAction())
+        let test1: Test1 = Test1();
+        test1.scheduleMission(control: missionControl)
 	}
 
-	@IBAction func addLandAction(_ sender: UIButtonExtension) {
-		let error = DJISDKManager.missionControl()?.scheduleElement(DJIRecordVideoAction())
-		if error != nil {
-			NSLog("Error when scheduling landing: \(error!)")
-		}
+    @IBAction func addLandAction(_ sender: UIButtonExtension) {
+		let missionControl = DJISDKManager.missionControl()
+        let test2: Test2 = Test2();
+        test2.scheduleMission(control: missionControl)
 	}
-	@IBAction func executeMission(_ sender: UIButtonExtension) {
+    
+  
+    @IBAction func test3(_ sender: UIButtonExtension) {
+        let missionControl = DJISDKManager.missionControl()
+        let test3: Test3 = Test3();
+        test3.scheduleMission(control: missionControl)
+    }
+    
+    @IBAction func test4(_ sender: UIButtonExtension) {
+        let missionControl = DJISDKManager.missionControl()
+        let test4: Test4 = Test4();
+        test4.scheduleMission(control: missionControl)
+    }
+    @IBAction func test5(_ sender: UIButtonExtension) {
+        let missionControl = DJISDKManager.missionControl()
+        let test5: Test5 = Test5();
+        test5.scheduleMission(control: missionControl)
+    }
+    
+    @IBAction func test6(_ sender: UIButtonExtension) {
+        let missionControl = DJISDKManager.missionControl()
+        let test6: Test6 = Test6();
+        test6.scheduleMission(control: missionControl)
+    }
+    
+    @IBAction func executeMission(_ sender: UIButtonExtension) {
 		DJISDKManager.missionControl()?.startTimeline()
-		NSLog(CoordinateManager.manager.appLocation.coordinate.longitude.description)
 	}
 
-
+    @IBAction func end(_ sender: UIButtonExtension) {
+        DJISDKManager.missionControl()?.stopTimeline()
+    }
+    
 
 }

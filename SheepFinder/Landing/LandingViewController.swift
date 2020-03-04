@@ -46,6 +46,7 @@ class LandingViewController: UIViewController {
 			message = product.model ?? "Product found, but no model"
 		}
 		connectedProductLabel.text = message
+		CoordinateManager.manager.activateHomeLocation()
 	}
 
 

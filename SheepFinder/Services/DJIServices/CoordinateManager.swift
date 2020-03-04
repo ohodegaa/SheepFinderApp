@@ -15,6 +15,8 @@ class CoordinateManager: NSObject, CLLocationManagerDelegate {
     
     var locationManager: CLLocationManager!
     
+    var homeLocation: CLLocation = CLLocation()
+    
     var appLocation: CLLocation = CLLocation()
     var flightController: DJIFlightController? = nil
 
@@ -30,6 +32,14 @@ class CoordinateManager: NSObject, CLLocationManagerDelegate {
             
         }
         self.flightController = DJIFlightController()
+    }
+    
+    func activateHomeLocation() {
+        self.flightController?.getHomeLocation(completion: self.getHomeCallback );
+    }
+    
+    func getHomeCallback(location: CLLocation?, err: Error?) -> Void{
+        self.homeLocation = location ?? CLLocation()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
