@@ -12,9 +12,9 @@ import DJISDK
 class Test3: TestMission {
     var addActions: [DJIMissionAction] = [
         DJITakeOffAction(),
-        DJIGoToAction(coordinate: CoordinateManager.manager.convertTo2DCoordinate(location: CoordinateManager.manager.homeLocation), altitude: 5)!,
+        DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 10.406780, longitude: 63.418988), altitude: 5)!,
         DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 10.406200, longitude: 63.419276), altitude: 5)!,
-        DJIGoToAction(coordinate: CoordinateManager.manager.convertTo2DCoordinate(location: CoordinateManager.manager.homeLocation), altitude: 5)!,
+        DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 10.406780, longitude: 63.418988), altitude: 5)!,
         DJILandAction(),
     ];
     

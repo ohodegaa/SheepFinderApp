@@ -11,7 +11,7 @@ import DJISDK
 class Test2: TestMission {
     var addActions: [DJIMissionAction] = [
         DJITakeOffAction(),
-        DJIGoToAction(coordinate: CoordinateManager.manager.convertTo2DCoordinate(location: CoordinateManager.manager.homeLocation), altitude: 2)!,
+        DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 10.406780, longitude: 63.418988), altitude: 2)!,
         DJILandAction(),
     ];
     
