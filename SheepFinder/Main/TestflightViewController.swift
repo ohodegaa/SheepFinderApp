@@ -53,6 +53,7 @@ class TestflightViewController: UIViewController {
 
     @IBAction func addLandAction(_ sender: UIButtonExtension) {
 		let missionControl = DJISDKManager.missionControl()
+		
         let test2: Test2 = Test2();
         test2.scheduleMission(control: missionControl)
 	}
@@ -87,6 +88,7 @@ class TestflightViewController: UIViewController {
 
     @IBAction func end(_ sender: UIButtonExtension) {
         DJISDKManager.missionControl()?.stopTimeline()
+		DJISDKManager.missionControl()?.unscheduleEverything()
     }
     
 

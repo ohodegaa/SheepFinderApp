@@ -158,6 +158,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="test5:" destination="81i-aT-Ouw" eventType="touchUpInside" id="78D-Jg-unU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wE-yk-bZm" customClass="UIButtonExtension" customModule="SheepFinder" customModuleProvider="target">
                                 <rect key="frame" x="592" y="192" width="100" height="30"/>
