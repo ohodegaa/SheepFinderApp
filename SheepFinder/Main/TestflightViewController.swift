@@ -21,6 +21,9 @@ class TestflightViewController: UIViewController {
 	@IBOutlet weak var executeButton: UIButtonExtension!
 
 
+	override func viewDidLoad() {
+		CoordinateManager.manager.activateHomeLocation()
+	}
 
 	// MARK: Private Methods
 

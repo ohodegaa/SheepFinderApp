@@ -19,7 +19,7 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>DJISDKAppKey</key>
-	<string>d006c51d17f369f3955110de</string>
+	<string>b218c0fc3d58be307124ebbb</string>
 	<key>GMSDKAppKey</key>
 	<string>AIzaSyBGUV02Rl7ZTkqXsNc1n0xZn40jtHQpWxY</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -29,6 +29,12 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Bluetooth is needed to use this app!</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>For hjemposisjon</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>For hjemposisjon</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -75,11 +81,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>For hjemposisjon</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>For hjemposisjon</string>
-	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>Bluetooth is needed to use this app!</string>
 </dict>
 </plist>

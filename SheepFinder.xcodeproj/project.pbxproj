@@ -19,6 +19,13 @@
 		5E5F9EE823E2DD2700D1091F /* CoordinateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F9EE623E2DD2700D1091F /* CoordinateManager.swift */; };
 		5E65654723F58B06001511E4 /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65654623F58B06001511E4 /* CustomPointAnnotation.swift */; };
 		5E65654923F59320001511E4 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65654823F59320001511E4 /* utils.swift */; };
+		5EA5DEF92411070300A7AE1E /* Test4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5DEF22411070300A7AE1E /* Test4.swift */; };
+		5EA5DEFA2411070300A7AE1E /* Test6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5DEF32411070300A7AE1E /* Test6.swift */; };
+		5EA5DEFB2411070300A7AE1E /* Test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5DEF42411070300A7AE1E /* Test2.swift */; };
+		5EA5DEFC2411070300A7AE1E /* TestMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5DEF52411070300A7AE1E /* TestMission.swift */; };
+		5EA5DEFD2411070300A7AE1E /* Test5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5DEF62411070300A7AE1E /* Test5.swift */; };
+		5EA5DEFE2411070300A7AE1E /* Test1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5DEF72411070300A7AE1E /* Test1.swift */; };
+		5EA5DEFF2411070300A7AE1E /* Test3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5DEF82411070300A7AE1E /* Test3.swift */; };
 		5EBFC02F23D9EF3500B47D12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFC02E23D9EF3500B47D12 /* AppDelegate.swift */; };
 		5EBFC03123D9EF3500B47D12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFC03023D9EF3500B47D12 /* SceneDelegate.swift */; };
 		5EBFC03323D9EF3500B47D12 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFC03223D9EF3500B47D12 /* LandingViewController.swift */; };
@@ -46,6 +53,13 @@
 		5E5F9EE623E2DD2700D1091F /* CoordinateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateManager.swift; sourceTree = "<group>"; };
 		5E65654623F58B06001511E4 /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
 		5E65654823F59320001511E4 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		5EA5DEF22411070300A7AE1E /* Test4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test4.swift; sourceTree = "<group>"; };
+		5EA5DEF32411070300A7AE1E /* Test6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test6.swift; sourceTree = "<group>"; };
+		5EA5DEF42411070300A7AE1E /* Test2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test2.swift; sourceTree = "<group>"; };
+		5EA5DEF52411070300A7AE1E /* TestMission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMission.swift; sourceTree = "<group>"; };
+		5EA5DEF62411070300A7AE1E /* Test5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test5.swift; sourceTree = "<group>"; };
+		5EA5DEF72411070300A7AE1E /* Test1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test1.swift; sourceTree = "<group>"; };
+		5EA5DEF82411070300A7AE1E /* Test3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test3.swift; sourceTree = "<group>"; };
 		5EBFC02B23D9EF3500B47D12 /* SheepFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SheepFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EBFC02E23D9EF3500B47D12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EBFC03023D9EF3500B47D12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +187,20 @@
 			path = Map;
 			sourceTree = "<group>";
 		};
+		5EA5DEF12411070300A7AE1E /* TestMissions */ = {
+			isa = PBXGroup;
+			children = (
+				5EA5DEF22411070300A7AE1E /* Test4.swift */,
+				5EA5DEF32411070300A7AE1E /* Test6.swift */,
+				5EA5DEF42411070300A7AE1E /* Test2.swift */,
+				5EA5DEF52411070300A7AE1E /* TestMission.swift */,
+				5EA5DEF62411070300A7AE1E /* Test5.swift */,
+				5EA5DEF72411070300A7AE1E /* Test1.swift */,
+				5EA5DEF82411070300A7AE1E /* Test3.swift */,
+			);
+			path = TestMissions;
+			sourceTree = "<group>";
+		};
 		5EBFC02223D9EF3500B47D12 = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +222,7 @@
 		5EBFC02D23D9EF3500B47D12 /* SheepFinder */ = {
 			isa = PBXGroup;
 			children = (
+				5EA5DEF12411070300A7AE1E /* TestMissions */,
 				5E3C542B23DF216F00CD21DA /* Extensions */,
 				5E3C542423DF132600CD21DA /* Main */,
 				5E0BBEC623DB28D8005905C2 /* Supporting files */,
@@ -343,17 +372,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA5DEF92411070300A7AE1E /* Test4.swift in Sources */,
 				5E0FC33723E04C65000F753C /* MainViewController.swift in Sources */,
 				5E0FC33923E05196000F753C /* TestflightViewController.swift in Sources */,
 				5EEF25A723E0A29800949B8F /* AppleMapsViewController.swift in Sources */,
 				5E65654923F59320001511E4 /* utils.swift in Sources */,
 				5E369A5F2405425B008C0B5F /* GoogleMapsViewController.swift in Sources */,
+				5EA5DEFF2411070300A7AE1E /* Test3.swift in Sources */,
 				5E0BBEC223DB1DB5005905C2 /* DJI.swift in Sources */,
+				5EA5DEFE2411070300A7AE1E /* Test1.swift in Sources */,
 				5E65654723F58B06001511E4 /* CustomPointAnnotation.swift in Sources */,
 				5ED5C4C723F6CB6700CC3476 /* SheepFinder.xcdatamodeld in Sources */,
 				5E3C542D23DF298000CD21DA /* AppStoryboard.swift in Sources */,
+				5EA5DEFD2411070300A7AE1E /* Test5.swift in Sources */,
 				5EBFC03323D9EF3500B47D12 /* LandingViewController.swift in Sources */,
 				5E3C542A23DF15AA00CD21DA /* UIButtonExtension.swift in Sources */,
+				5EA5DEFB2411070300A7AE1E /* Test2.swift in Sources */,
+				5EA5DEFA2411070300A7AE1E /* Test6.swift in Sources */,
+				5EA5DEFC2411070300A7AE1E /* TestMission.swift in Sources */,
 				5E5F9EE823E2DD2700D1091F /* CoordinateManager.swift in Sources */,
 				5EBFC02F23D9EF3500B47D12 /* AppDelegate.swift in Sources */,
 				5EBFC03123D9EF3500B47D12 /* SceneDelegate.swift in Sources */,
@@ -503,6 +539,7 @@
 			baseConfigurationReference = 65FF8B7092FA0C9AA15000E2 /* Pods-SheepFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J6URDK4YM;
 				ENABLE_BITCODE = NO;
@@ -517,8 +554,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sophus.SheepFinder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sophus.SheepFinderOle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -531,6 +569,7 @@
 			baseConfigurationReference = 11468761E3F05DE7DF273303 /* Pods-SheepFinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J6URDK4YM;
 				ENABLE_BITCODE = NO;
@@ -545,8 +584,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sophus.SheepFinder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sophus.SheepFinderOle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

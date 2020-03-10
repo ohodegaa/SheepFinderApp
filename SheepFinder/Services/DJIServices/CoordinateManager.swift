@@ -39,6 +39,9 @@ class CoordinateManager: NSObject, CLLocationManagerDelegate {
     }
     
     func getHomeCallback(location: CLLocation?, err: Error?) -> Void{
+		print("Home location:")
+		print(location?.coordinate)
+		print(err ?? "No error")
         self.homeLocation = location ?? CLLocation()
     }
     
