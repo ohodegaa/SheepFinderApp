@@ -10,18 +10,18 @@ import DJISDK
 
 
 class Test6: TestMission {
-    var addActions: [DJIMissionAction] = [
-        DJITakeOffAction(),
-        DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 10.406780, longitude: 63.418988), altitude: 20)!,
-        DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 10.406425, longitude: 63.419033), altitude: 20)!,
-        DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 10.406366, longitude: 63.419214), altitude: 20)!,
-        DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 10.406823, longitude: 63.419242), altitude: 20)!,
-        DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 10.406780, longitude: 63.418988), altitude: 20)!,
-        DJILandAction(),
-    ];
-    
-    override init() {
-        super.init()
-        self.actions = addActions;
-    };
+	var addActions: [DJIMissionAction] = [
+		DJITakeOffAction(),
+		DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 63.418988, longitude: 10.406780), altitude: 20)!,
+		DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 63.419033, longitude: 10.406425), altitude: 20)!,
+		DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 63.419214, longitude: 10.406366), altitude: 20)!,
+		DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 63.419242, longitude: 10.406823), altitude: 20)!,
+		DJIGoToAction(coordinate: CLLocationCoordinate2D(latitude: 63.418988, longitude: 10.406780), altitude: 20)!,
+		DJILandAction(),
+	];
+
+	override init() {
+		super.init()
+		self.actions = addActions;
+	};
 }

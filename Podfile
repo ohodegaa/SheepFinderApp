@@ -1,4 +1,4 @@
-platform :ios, '13.2'
+platform :ios, '12.4'
 workspace 'SheepFinder'
 
 post_install do |installer|
