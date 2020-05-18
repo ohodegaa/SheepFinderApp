@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		593F527CB53DB80E92BA953D /* Pods_SheepFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA1E706A8CA83A6F0D647A4 /* Pods_SheepFinder.framework */; };
+		3F519451ADE30571BEB4B426 /* Pods_SheepFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FFA984D2B4FA084E86026DE /* Pods_SheepFinder.framework */; };
 		5E0BBEC223DB1DB5005905C2 /* DJI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BBEC123DB1DB5005905C2 /* DJI.swift */; };
 		5E0FC33723E04C65000F753C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0FC33623E04C65000F753C /* MainViewController.swift */; };
 		5E0FC33923E05196000F753C /* TestflightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0FC33823E05196000F753C /* TestflightViewController.swift */; };
@@ -37,8 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0BA1E706A8CA83A6F0D647A4 /* Pods_SheepFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SheepFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11468761E3F05DE7DF273303 /* Pods-SheepFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SheepFinder.release.xcconfig"; path = "Target Support Files/Pods-SheepFinder/Pods-SheepFinder.release.xcconfig"; sourceTree = "<group>"; };
+		4FFA984D2B4FA084E86026DE /* Pods_SheepFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SheepFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51B7552810F9D989EA1DCCFF /* Pods-SheepFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SheepFinder.debug.xcconfig"; path = "Target Support Files/Pods-SheepFinder/Pods-SheepFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		5E0BBEC123DB1DB5005905C2 /* DJI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJI.swift; sourceTree = "<group>"; };
 		5E0FC33623E04C65000F753C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5E0FC33823E05196000F753C /* TestflightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestflightViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		5EBFC03C23D9EF3600B47D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ED5C4C623F6CB6700CC3476 /* Polygon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Polygon.xcdatamodel; sourceTree = "<group>"; };
 		5EEF25A623E0A29800949B8F /* AppleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMapsViewController.swift; sourceTree = "<group>"; };
-		65FF8B7092FA0C9AA15000E2 /* Pods-SheepFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SheepFinder.debug.xcconfig"; path = "Target Support Files/Pods-SheepFinder/Pods-SheepFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		BBDDD0B865A8374E9C1161EA /* Pods-SheepFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SheepFinder.release.xcconfig"; path = "Target Support Files/Pods-SheepFinder/Pods-SheepFinder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				593F527CB53DB80E92BA953D /* Pods_SheepFinder.framework in Frameworks */,
+				3F519451ADE30571BEB4B426 /* Pods_SheepFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +88,8 @@
 		15ACE5808C7A43A5D64F7B83 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				65FF8B7092FA0C9AA15000E2 /* Pods-SheepFinder.debug.xcconfig */,
-				11468761E3F05DE7DF273303 /* Pods-SheepFinder.release.xcconfig */,
+				51B7552810F9D989EA1DCCFF /* Pods-SheepFinder.debug.xcconfig */,
+				BBDDD0B865A8374E9C1161EA /* Pods-SheepFinder.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -100,7 +100,7 @@
 				5E5D3FF023FBDD9E00EB5155 /* Pods */,
 				5E5D3FED23FBDD2E00EB5155 /* DJISDK.framework */,
 				5E5D3FEA23FBDD0600EB5155 /* DJIWidget.framework */,
-				0BA1E706A8CA83A6F0D647A4 /* Pods_SheepFinder.framework */,
+				4FFA984D2B4FA084E86026DE /* Pods_SheepFinder.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -244,12 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EBFC03F23D9EF3600B47D12 /* Build configuration list for PBXNativeTarget "SheepFinder" */;
 			buildPhases = (
-				DCC2AC87B38D3954447EA8D6 /* [CP] Check Pods Manifest.lock */,
+				55E740CAFE50EF5EC2C436C1 /* [CP] Check Pods Manifest.lock */,
 				5EBFC02723D9EF3500B47D12 /* Sources */,
 				5EBFC02823D9EF3500B47D12 /* Frameworks */,
 				5EBFC02923D9EF3500B47D12 /* Resources */,
-				3BABDFA83ABCB496A6719969 /* [CP] Embed Pods Frameworks */,
-				22C36708173723F5ACF5DA25 /* [CP] Copy Pods Resources */,
+				B49516060C2CBC9637A17F4E /* [CP] Embed Pods Frameworks */,
+				73F880FA12F0788982A6339E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,41 +309,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		22C36708173723F5ACF5DA25 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SheepFinder/Pods-SheepFinder-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SheepFinder/Pods-SheepFinder-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SheepFinder/Pods-SheepFinder-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3BABDFA83ABCB496A6719969 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SheepFinder/Pods-SheepFinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SheepFinder/Pods-SheepFinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SheepFinder/Pods-SheepFinder-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DCC2AC87B38D3954447EA8D6 /* [CP] Check Pods Manifest.lock */ = {
+		55E740CAFE50EF5EC2C436C1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -363,6 +329,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73F880FA12F0788982A6339E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SheepFinder/Pods-SheepFinder-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SheepFinder/Pods-SheepFinder-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SheepFinder/Pods-SheepFinder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B49516060C2CBC9637A17F4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SheepFinder/Pods-SheepFinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SheepFinder/Pods-SheepFinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SheepFinder/Pods-SheepFinder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -536,7 +536,7 @@
 		};
 		5EBFC04023D9EF3600B47D12 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65FF8B7092FA0C9AA15000E2 /* Pods-SheepFinder.debug.xcconfig */;
+			baseConfigurationReference = 51B7552810F9D989EA1DCCFF /* Pods-SheepFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -549,7 +549,7 @@
 				);
 				HEADER_SEARCH_PATHS = "\"$(PODS_ROOT)/Headers/Public\"";
 				INFOPLIST_FILE = SheepFinder/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -566,7 +566,7 @@
 		};
 		5EBFC04123D9EF3600B47D12 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11468761E3F05DE7DF273303 /* Pods-SheepFinder.release.xcconfig */;
+			baseConfigurationReference = BBDDD0B865A8374E9C1161EA /* Pods-SheepFinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -579,7 +579,7 @@
 				);
 				HEADER_SEARCH_PATHS = "\"$(PODS_ROOT)/Headers/Public\"";
 				INFOPLIST_FILE = SheepFinder/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
