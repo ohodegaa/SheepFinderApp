@@ -19,6 +19,8 @@ Pods/
 !default.perspectivev3
 xcuserdata
 
+*.xcuserdatad
+
 ## Other
 *.xccheckout
 *.moved-aside
