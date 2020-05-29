@@ -9,7 +9,10 @@
 import MapKit
 
 func sortConvex(input: [CLLocationCoordinate2D]) -> [CLLocationCoordinate2D] {
-
+	
+	if (input.count <= 0) {
+		return input
+	}
 	// X = longitude
 	// Y = latitude
 

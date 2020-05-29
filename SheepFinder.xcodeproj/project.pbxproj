@@ -19,6 +19,7 @@
 		5E5F9EE823E2DD2700D1091F /* CoordinateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F9EE623E2DD2700D1091F /* CoordinateManager.swift */; };
 		5E65654723F58B06001511E4 /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65654623F58B06001511E4 /* CustomPointAnnotation.swift */; };
 		5E65654923F59320001511E4 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65654823F59320001511E4 /* utils.swift */; };
+		5E88B3D12472B7CF0058A341 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E88B3D02472B7CF0058A341 /* DoubleExtension.swift */; };
 		5EA5DEF92411070300A7AE1E /* Test4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5DEF22411070300A7AE1E /* Test4.swift */; };
 		5EA5DEFA2411070300A7AE1E /* Test6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5DEF32411070300A7AE1E /* Test6.swift */; };
 		5EA5DEFB2411070300A7AE1E /* Test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5DEF42411070300A7AE1E /* Test2.swift */; };
@@ -53,6 +54,7 @@
 		5E5F9EE623E2DD2700D1091F /* CoordinateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateManager.swift; sourceTree = "<group>"; };
 		5E65654623F58B06001511E4 /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
 		5E65654823F59320001511E4 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		5E88B3D02472B7CF0058A341 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		5EA5DEF22411070300A7AE1E /* Test4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test4.swift; sourceTree = "<group>"; };
 		5EA5DEF32411070300A7AE1E /* Test6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test6.swift; sourceTree = "<group>"; };
 		5EA5DEF42411070300A7AE1E /* Test2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test2.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				5E3C542923DF15AA00CD21DA /* UIButtonExtension.swift */,
+				5E88B3D02472B7CF0058A341 /* DoubleExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				5E3C542D23DF298000CD21DA /* AppStoryboard.swift in Sources */,
 				5EA5DEFD2411070300A7AE1E /* Test5.swift in Sources */,
 				5EBFC03323D9EF3500B47D12 /* LandingViewController.swift in Sources */,
+				5E88B3D12472B7CF0058A341 /* DoubleExtension.swift in Sources */,
 				5E3C542A23DF15AA00CD21DA /* UIButtonExtension.swift in Sources */,
 				5EA5DEFB2411070300A7AE1E /* Test2.swift in Sources */,
 				5EA5DEFA2411070300A7AE1E /* Test6.swift in Sources */,
@@ -554,7 +558,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sophus.SheepFinderOle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sophus.SheepFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -584,7 +588,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sophus.SheepFinderOle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sophus.SheepFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
